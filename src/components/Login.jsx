@@ -32,7 +32,17 @@ class Login extends React.Component {
                 name="password" id="password" type="password"/> <br/> <br/>
 
             </form>
+
+            <div>
+                <button onClick={this.save.bind(this)}>
+                    Aceptar
+                </button>
+                <span style={{color: 'green'}}>{this.state.message}</span>
+            </div>
         </div>
+
+
+
          );
     }
 }

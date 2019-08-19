@@ -26,6 +26,10 @@ class Registro extends React.Component {
 
     }
 
+    register(e){
+        
+    }
+
     render() { 
         return ( 
         <div>
@@ -55,8 +59,15 @@ class Registro extends React.Component {
                     Aceptar
                 </button>
                 <span style={{color: 'green'}}>{this.state.message}</span>
+
+                <p style={{color: 'green'}}>No tienes Cuenta?</p>
+
+                <button onClick={this.register.bind(this)}>
+                    Regístrate
+                </button>
             </div>
         </div>
+
          );
     }
 }
