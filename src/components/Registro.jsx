@@ -25,11 +25,6 @@ class Registro extends React.Component {
         })
 
     }
-
-    register(e){
-        
-    }
-
     render() { 
         return ( 
         <div>
@@ -55,16 +50,12 @@ class Registro extends React.Component {
             </form> <br/>
 
             <div>
-                <button onClick={this.save.bind(this)}>
+                <button onClick={this.save.bind(this)} > <a href="https://biologicplastic.netlify.com/">
                     Aceptar
-                </button>
+                    </a></button>
                 <span style={{color: 'green'}}>{this.state.message}</span>
 
-                <p style={{color: 'green'}}>No tienes Cuenta?</p>
-
-                <button onClick={this.register.bind(this)}>
-                    Regístrate
-                </button>
+               
             </div>
         </div>
 

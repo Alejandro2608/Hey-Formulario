@@ -1,4 +1,6 @@
 import React from 'react';
+import Registro from './Registro'
+
 
 class Login extends React.Component {
     constructor(args) {
@@ -16,6 +18,17 @@ class Login extends React.Component {
             [e.target.name]: e.target.value
         })
     }
+    save(e){
+        this.setState({
+            message: 'Guardado correctamente'
+        })
+    }
+
+
+register(e){
+    
+}
+
 
     render() { 
         return ( 
@@ -38,6 +51,12 @@ class Login extends React.Component {
                     Aceptar
                 </button>
                 <span style={{color: 'green'}}>{this.state.message}</span>
+
+                <p style={{color: 'green'}}>No tienes Cuenta?</p>
+
+        <button onClick={this.register.bind(this)}> <a href={Registro}>
+            Regístrate
+            </a></button>
             </div>
         </div>
 
